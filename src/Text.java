@@ -1,3 +1,5 @@
+import java.util.Iterator;
+
 /**
  * Created by Denis on 21.12.2014.
  */
@@ -30,19 +32,24 @@ class Text {
         this.text = str;
     }
 
-    public class Iterator{
-        public Iterator(Text t) {
-            //todo написать конструктор для класса Iterator
+    public class Iter implements Iterator<Text> {
+        public Iter(Text t) {
+            //todo написать конструктор и методы для класса Iterator
         }
 
-        public String next(){
-            //todo написать метод next
-            return "";
+        @Override
+        public boolean hasNext() {
+            return false;
         }
 
-        public boolean hasNext(){
-            //todo написать метод hasNext
-            return true;
+        @Override
+        public Text next() {
+            return null;
+        }
+
+        @Override
+        public void remove() {
+
         }
 
         public void setCondition(){}
